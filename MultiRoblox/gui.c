@@ -25,7 +25,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     wc.lpszClassName = "MULTIROBLOX_CLASS";
 
     RegisterClass(&wc);
-
+  
     g_hwnd = CreateWindowEx(0, "MULTIROBLOX_CLASS", L"MultiRoblox", WS_BORDER | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX, CW_USEDEFAULT, CW_USEDEFAULT, 200, 120, NULL, NULL, hInstance, NULL);
     g_title = CreateWindow(L"STATIC", L"MultiRoblox 0.0.4", WS_VISIBLE | WS_CHILD, 10, 10, 365, 20, g_hwnd, NULL, hInstance, NULL);
     g_textbox = CreateWindow(L"EDIT", L"Please Open Roblox.This\r\nApplies Automatically", WS_BORDER | WS_VISIBLE | WS_CHILD | ES_LEFT | ES_AUTOHSCROLL | ES_MULTILINE | ES_READONLY, 10, 40, 365, 365, g_hwnd, NULL, hInstance, NULL);
