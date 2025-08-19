@@ -24,9 +24,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
     RegisterClass(&wc);
 
-    g_hwnd = CreateWindowEx(0, "MULTIROBLOX_CLASS", L"MultiRoblox", WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX, CW_USEDEFAULT, CW_USEDEFAULT, 400, 455, NULL, NULL, hInstance, NULL);
-    g_title = CreateWindow(L"STATIC", L"MultiRoblox 0.0.3", WS_VISIBLE | WS_CHILD, 10, 10, 365, 20, g_hwnd, NULL, hInstance, NULL);
-    g_textbox = CreateWindow(L"EDIT", L"Thanks for using MultiRoblox!\r\n\r\nIn case if you're wondering, you must open\r\nMultiRoblox FIRST before opening multiple ROBLOX\r\nsessions. Once you close MultiRoblox, all but one\r\nROBLOX instance will close.\r\n\r\n", WS_BORDER | WS_VISIBLE | WS_CHILD | ES_LEFT | ES_AUTOHSCROLL | ES_MULTILINE | ES_READONLY, 10, 40, 365, 365, g_hwnd, NULL, hInstance, NULL);
+    g_hwnd = CreateWindowEx(0, "MULTIROBLOX_CLASS", L"MultiRoblox", WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX, 100, 100, 400, 455, NULL, NULL, hInstance, NULL);
+    g_title = CreateWindow(L"STATIC", L"MultiRoblox 0.0.4", WS_VISIBLE | WS_CHILD, 10, 10, 365, 20, g_hwnd, NULL, hInstance, NULL);
     if (g_hwnd == NULL)
     {
         return 0;
