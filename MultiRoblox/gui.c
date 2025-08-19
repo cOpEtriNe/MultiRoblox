@@ -1,7 +1,6 @@
 #include <windows.h>
 
 #include "gui.h"
-#include "mutex.h"
 
 
 LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
